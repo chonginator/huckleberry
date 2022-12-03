@@ -10,3 +10,86 @@ body {
 }
 
 /* Add styles here! */
+:root {
+  /* Primary */
+  --green: hsl(160deg, 100%, 30%);
+
+  /* Secondary */
+  --gold50: hsl(45deg, 100%, 50%); 
+  --gold40: hsl(45deg, 100%, 40%);
+
+  /* Grays */
+  --black: hsl(0deg, 0%, 0%);
+  --white: hsl(0deg, 0%, 100%);
+  --gray10: hsl(0deg, 0%, 10%);
+  --gray30: hsl(0deg, 0%, 30%);
+  --gray40: hsl(0deg, 0%, 40%);
+  --gray60: hsl(0deg, 0%, 60%);
+}
+
+main {
+  background-color: var(--gray30);
+}
+
+header {
+  border-bottom: 8px solid var(--gray60);
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+h1,
+h2 {
+  font-weight: 800;
+}
+
+h1 {
+  margin-top: 32px;
+}
+
+p {
+  font-size: 1.25rem;
+  margin-top: 16px;
+  line-height: 30px;
+}
+
+.intro-chunk p:first-of-type {
+  margin-top: 48px;
+}
+
+strong {
+  color: var(--green);
+}
+
+em {
+  font-style: unset;
+}
+
+.max-width-wrapper {
+  padding: 65px 0;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intro-chunk {
+  padding: 0 24px;
+  max-width: 450px;
+}
+
+.card {
+  background-color: var(--white);
+  padding: 8px 24px 24px;
+  border-bottom: 8px solid var(--gray60);
+}
+
+.indented-heading {
+  width: fit-content;
+  padding: 16px 32px;
+  margin-left: -32px;
+  border-bottom: 8px solid var(--gold40);
+  background-color: var(--gold50);
+}
